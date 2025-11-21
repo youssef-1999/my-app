@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Home,
@@ -9,9 +9,8 @@ import {
   HandCoins,
   Settings,
   Award,
-  Baby,
   BadgeDollarSign,
-} from "lucide-react"
+} from "lucide-react";
 
 import {
   Sidebar,
@@ -22,10 +21,10 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "@/components/ui/sidebar"
+} from "@/components/ui/sidebar";
 
-import Link from "next/link"
-import { useUIStore } from "@/store/UIStore"
+import Link from "next/link";
+import { useUIStore } from "@/store/UIStore";
 
 const items = [
   { title: "Dashboard", url: "/dashboard", icon: Home },
@@ -37,16 +36,24 @@ const items = [
   { title: "Services", url: "/services", icon: Settings },
   { title: "My Privileges", url: "/myprivileges", icon: Award },
   { title: "Setting", url: "/setting", icon: Settings },
-]
+];
 
 export function AppSidebar() {
-  const setActiveSection = useUIStore((state) => state.setActiveSection)
+  const setActiveSection = useUIStore((state) => state.setActiveSection);
 
   return (
-    <Sidebar>
+    <Sidebar collapsible="icon" variant="sidebar">
+
       <SidebarContent>
+
         <SidebarGroup>
-          <SidebarGroupLabel className="text-blue-800 font-extrabold text-2xl"> <BadgeDollarSign />BankDash</SidebarGroupLabel>
+
+          {/* Logo */}
+          <SidebarGroupLabel className="flex items-center gap-2 text-2xl font-extrabold text-blue-800 py-4 px-4">
+            <BadgeDollarSign className="text-blue-600 w-6 h-6" />
+            BankDash
+          </SidebarGroupLabel>
+
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
@@ -54,10 +61,10 @@ export function AppSidebar() {
                   <SidebarMenuButton asChild>
                     <Link
                       href={item.url}
-                      onClick={() => setActiveSection(item.title)}  // ✅ هنا الربط
-                      className="flex items-center gap-2"
+                      onClick={() => setActiveSection(item.title)}
+                      className="flex items-center gap-3 px-4 py-2 text-sm"
                     >
-                      <item.icon />
+                      <item.icon className="w-5 h-5" />
                       <span>{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
@@ -65,8 +72,11 @@ export function AppSidebar() {
               ))}
             </SidebarMenu>
           </SidebarGroupContent>
+
         </SidebarGroup>
+
       </SidebarContent>
+
     </Sidebar>
-  )
+  );
 }

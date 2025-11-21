@@ -44,7 +44,7 @@ const [cards, setCards] = useState<CardItem[]>([]);
       <div className="flex flex-col  space-y-4 gap-4">
         {cards.map((item, i) => (
           <Card
-            key={i}
+            key={item.id}
             className="
               w-full p-5 rounded-3xl shadow-sm
               flex items-center justify-between
