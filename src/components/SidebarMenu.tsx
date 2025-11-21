@@ -6,7 +6,7 @@ import {
   User,
   TrendingUp,
   Wallet,
-  Bank,
+  HandCoins,
   Settings,
   Award,
 } from "lucide-react"
@@ -29,7 +29,7 @@ const items = [
   { title: "Accounts", url: "#", icon: User },
   { title: "Investments", url: "#", icon: TrendingUp },
   { title: "Credit Cards", url: "#", icon: Wallet },
-  { title: "Loans", url: "#", icon: Bank },
+  { title: "Loans", url: "#", icon: HandCoins },
   { title: "Services", url: "#", icon: Settings },
   { title: "My Privileges", url: "#", icon: Award },
   { title: "Setting", url: "#", icon: Settings },
