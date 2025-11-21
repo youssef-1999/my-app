@@ -1,0 +1,171 @@
+{
+  "monthlyStats": [
+    { "id": 1, "name": "Jul", "value": 120 },
+    { "id": 2, "name": "Aug", "value": 320 },
+    { "id": 3, "name": "Sep", "value": 450 },
+    { "id": 4, "name": "Oct", "value": 780 },
+    { "id": 5, "name": "Nov", "value": 260 },
+    { "id": 6, "name": "Dec", "value": 540 },
+    { "id": 7, "name": "Jan", "value": 680 }
+  ],
+"data" : [
+  { "day": "Sat", "deposit": 500, "withdraw": 230 },
+  { "day": "Sun", "deposit": 350, "withdraw": 120 },
+  { "day": "Mon", "deposit": 330, "withdraw": 250 },
+  { "day": "Tue", "deposit": 480, "withdraw": 360 },
+  { "day": "Wed", "deposit": 140, "withdraw": 190 },
+  { "day": "Thu", "deposit": 390, "withdraw": 230 },
+  { "day": "Fri", "deposit": 410, "withdraw": 330 }
+],
+
+  "bankDistribution": [
+    { "id": 1, "name": "DBL Bank", "value": 400, "color": "#4F46E5" },
+    { "id": 2, "name": "ABM Bank", "value": 300, "color": "#14B8A6" },
+    { "id": 3, "name": "BRC Bank", "value": 300, "color": "#F472B6" },
+    { "id": 4, "name": "MCP Bank", "value": 200, "color": "#FACC15" }
+  ],
+
+  "cardList": [
+    {
+      "id": 1,
+      "cardType": "Secondary",
+      "bank": "DBL Bank",
+      "number": "5600",
+      "name": "William",
+      "iconBg": "bg-blue-100",
+      "iconColor": "text-blue-600",
+      "detailsColor": "text-blue-500"
+    },
+    {
+      "id": 2,
+      "cardType": "Secondary",
+      "bank": "BRC Bank",
+      "number": "4300",
+      "name": "Michel",
+      "iconBg": "bg-pink-100",
+      "iconColor": "text-pink-600",
+      "detailsColor": "text-blue-500"
+    },
+    {
+      "id": 3,
+      "cardType": "Secondary",
+      "bank": "ABM Bank",
+      "number": "7560",
+      "name": "Edward",
+      "iconBg": "bg-yellow-100",
+      "iconColor": "text-yellow-600",
+      "detailsColor": "text-blue-500"
+    }
+  ],
+
+  "cardSettings": [
+    {
+      "id": 1,
+      "title": "Block Card",
+      "description": "Instantly block your card",
+      "icon": "CreditCard",
+      "iconColor": "text-orange-500",
+      "iconBg": "bg-orange-100"
+    },
+    {
+      "id": 2,
+      "title": "Change Pin Code",
+      "description": "Choose another pin code",
+      "icon": "Lock",
+      "iconColor": "text-blue-500",
+      "iconBg": "bg-blue-100"
+    },
+    {
+      "id": 3,
+      "title": "Add to Google Pay",
+      "description": "Withdraw without any card",
+      "icon": "Google",
+      "iconColor": "text-pink-500",
+      "iconBg": "bg-pink-100"
+    },
+    {
+      "id": 4,
+      "title": "Add to Apple Pay",
+      "description": "Withdraw without any card",
+      "icon": "Apple",
+      "iconColor": "text-teal-500",
+      "iconBg": "bg-teal-100"
+    },
+    {
+      "id": 5,
+      "title": "Add to Apple Store",
+      "description": "Withdraw without any card",
+      "icon": "Apple",
+      "iconColor": "text-teal-500",
+      "iconBg": "bg-teal-100"
+    }
+  ],
+
+  "investmentStats": [
+    {
+      "id": 1,
+      "title": "Total Invested Amount",
+      "value": "$150,000",
+      "icon": "DollarSign",
+      "bg": "bg-teal-100",
+      "iconBg": "bg-teal-400"
+    },
+    {
+      "id": 2,
+      "title": "Number of Investments",
+      "value": "1,250",
+      "icon": "BarChart3",
+      "bg": "bg-pink-100",
+      "iconBg": "bg-pink-400"
+    },
+    {
+      "id": 3,
+      "title": "Rate of Return",
+      "value": "+5.80%",
+      "icon": "RefreshCcw",
+      "bg": "bg-indigo-100",
+      "iconBg": "bg-indigo-400"
+    }
+  ],
+
+
+
+  "weeklyActivity": [
+    { "day": "Sat", "deposit": 500, "withdraw": 230 },
+    { "day": "Sun", "deposit": 350, "withdraw": 120 },
+    { "day": "Mon", "deposit": 330, "withdraw": 250 },
+    { "day": "Tue", "deposit": 480, "withdraw": 360 },
+    { "day": "Wed", "deposit": 140, "withdraw": 190 },
+    { "day": "Thu", "deposit": 390, "withdraw": 230 },
+    { "day": "Fri", "deposit": 410, "withdraw": 330 }
+  ],
+
+  "users": [
+    {
+      "id": 1,
+      "name": "Livia Bator",
+      "role": "CEO",
+      "img": "https://i.pravatar.cc/100?img=47"
+    },
+    {
+      "id": 2,
+      "name": "Randy Press",
+      "role": "Director",
+      "img": "https://i.pravatar.cc/100?img=12"
+    },
+    {
+      "id": 3,
+      "name": "Workman",
+      "role": "Designer",
+      "img": "https://i.pravatar.cc/100?img=33"
+    }
+  ],
+
+  "stocks": [
+    { "no": "01.", "name": "Trivago", "price": "$520", "return": "+5%", "color": "text-green-500" },
+    { "no": "02.", "name": "Canon", "price": "$480", "return": "+10%", "color": "text-green-500" },
+    { "no": "03.", "name": "Uber Food", "price": "$350", "return": "-3%", "color": "text-red-500" },
+    { "no": "04.", "name": "Nokia", "price": "$940", "return": "+2%", "color": "text-green-500" },
+    { "no": "05.", "name": "Tiktok", "price": "$670", "return": "-12%", "color": "text-red-500" }
+  ]
+}
