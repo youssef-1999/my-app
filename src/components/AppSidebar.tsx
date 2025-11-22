@@ -62,7 +62,7 @@ export function AppSidebar() {
                     <Link
                       href={item.url}
                       onClick={() => setActiveSection(item.title)}
-                      className="flex items-center gap-3 px-4 py-2 text-sm"
+                      className="flex items-center gap-3 px-4 py-2 mt-8 text-sm"
                     >
                       <item.icon className="w-5 h-5" />
                       <span>{item.title}</span>
